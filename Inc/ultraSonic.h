@@ -18,8 +18,8 @@
 #define TRIG_PORT_L   GPIOB
 #define TRIG_PIN_L    GPIO_PIN_15
 
-void HCSR04_TRIG_R(void);
-void HCSR04_TRIG_M(void);
-void HCSR04_TRIG_L(void);
+//void HCSR04_TRIG_R(void);
+//void HCSR04_TRIG_M(void);
+void HCSR04_TRIG_ALL(void);
 
 #endif /* INC_ULTRASONIC_H_ */

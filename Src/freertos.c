@@ -433,7 +433,7 @@ void SonicTask01(void *argument)
 	{
 		if(autoFlag == 1)
 		{
-            HCSR04_TRIG_L();
+            HCSR04_TRIG_ALL();
             HAL_Delay(10);
 			// 자동 모드 종료 체크
 			if (autoFlag == 0)
@@ -457,11 +457,11 @@ void SonicTask01(void *argument)
 					auto_Right();
 				}
 			}
-			else if (distance_R <= 20 && distance_L > 20)
+			else if (distance_R <= 15 && distance_L > 20)
 			{
 				front_Left();
 			}
-			else if (distance_L <= 20 && distance_R > 20)
+			else if (distance_L <= 15 && distance_R > 20)
 			{
 				front_Right();
 			}

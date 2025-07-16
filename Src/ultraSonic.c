@@ -20,7 +20,7 @@ uint16_t distance_R = 0;
 
 
 
-void HCSR04_TRIG_L(void)
+void HCSR04_TRIG_ALL(void)
 {
   HAL_GPIO_WritePin(TRIG_PORT_L, TRIG_PIN_L, GPIO_PIN_RESET);
   delay_us(1);

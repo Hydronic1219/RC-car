@@ -45,8 +45,8 @@ void autofrontBehave()
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-		TIM3 -> CCR1 = 450;
-		TIM3 -> CCR2 = 450;
+		TIM3 -> CCR1 = 1000;
+		TIM3 -> CCR2 = 1000;
 }
 
 void backBehave()
@@ -157,8 +157,8 @@ void auto_Left()
 
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-	TIM3 -> CCR1 = 700;
-	TIM3 -> CCR2 = 700;
+	TIM3 -> CCR1 = 1000;
+	TIM3 -> CCR2 = 1000;
 }
 
 void auto_Right()
@@ -168,8 +168,8 @@ void auto_Right()
 
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-	TIM3 -> CCR1 = 700;
-	TIM3 -> CCR2 = 700;
+	TIM3 -> CCR1 = 1000;
+	TIM3 -> CCR2 = 1000;
 }
 
 
